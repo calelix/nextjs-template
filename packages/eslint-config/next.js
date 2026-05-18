@@ -48,4 +48,27 @@ export const nextJsConfig = [
       "react/prop-types": "off",
     },
   },
+  {
+    rules: {
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "no-tabs": [
+        "error"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "eol-last": [
+        "error",
+        "always",
+      ],
+    },
+  },
 ]
