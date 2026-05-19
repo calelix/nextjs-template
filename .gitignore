@@ -31,6 +31,9 @@ next-env.d.ts
 # Debug
 npm-debug.log*
 
+# Playwright MCP artifacts
+.playwright-mcp/
+
 # Misc
 .DS_Store
 *.pem
