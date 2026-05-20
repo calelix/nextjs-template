@@ -35,7 +35,7 @@
     "@vitejs/plugin-react": "^6.0.2",
     "@workspace/eslint-config": "workspace:^",
     "@workspace/typescript-config": "workspace:*",
-    "eslint": "^9.39.2",
+    "eslint": "^9.39.4",
     "jsdom": "^29.1.1",
     "typescript": "^5.9.3",
     "vite-tsconfig-paths": "^6.1.1",
