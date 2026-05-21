@@ -1,5 +1,16 @@
 {
   "env": {
     "ANTHROPIC_BASE_URL": "http://127.0.0.1:9801"
+  },
+  "enabledPlugins": {
+    "vercel@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
   }
 }
