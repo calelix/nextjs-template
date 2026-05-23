@@ -1,0 +1,52 @@
+import { Meta } from "@storybook/addon-docs/blocks"
+
+<Meta title="Docs/Introduction" />
+
+# Introduction
+
+This Storybook is a workspace for developing, documenting, and testing the UI
+components and pages of `apps/web` in isolation.
+
+## Setup
+
+- **Framework**: `@storybook/nextjs-vite` (Next.js App Router compatible)
+- **Providers**: `ThemeProvider` and `QueryProvider` are applied to every story
+  automatically (see `.storybook/preview.tsx`)
+- **Styles**: `@workspace/ui/globals.css` (Tailwind v4) is loaded globally
+- **Fonts**: Geist and Geist Mono CSS variables are injected
+
+## Where to put stories
+
+Stories can live in either location:
+
+| Location | Use case |
+| --- | --- |
+| Next to the component (`*.stories.tsx`) | Stories for a single component (recommended) |
+| `apps/web/stories/` | Cross-cutting docs, demos, and guides |
+
+The `stories` glob in `.storybook/main.ts` scans `**/*.stories.*` across the
+whole package.
+
+## Basic pattern
+
+```tsx
+import type { Meta, StoryObj } from "@storybook/nextjs-vite"
+
+import { MyComponent } from "./my-component"
+
+const meta = {
+  title: "Components/MyComponent",
+  component: MyComponent,
+} satisfies Meta<typeof MyComponent>
+
+export default meta
+type Story = StoryObj<typeof meta>
+
+export const Default: Story = {}
+```
+
+## Run
+
+```bash
+pnpm --filter web storybook
+```
