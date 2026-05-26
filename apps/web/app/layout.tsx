@@ -4,6 +4,7 @@ import "@workspace/ui/globals.css"
 
 import { cn } from "@workspace/ui/lib/utils"
 
+import { MSWProvider } from "@/components/msw-provider"
 import { QueryProvider } from "@/components/query-provider"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -30,7 +31,9 @@ export default function RootLayout({
     >
       <body>
         <QueryProvider>
-          <ThemeProvider>{children}</ThemeProvider>
+          <ThemeProvider>
+            <MSWProvider>{children}</MSWProvider>
+          </ThemeProvider>
         </QueryProvider>
       </body>
     </html>
