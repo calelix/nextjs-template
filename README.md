@@ -1,4 +1,4 @@
-# Template
+# Next.js Monorepo Template
 
 A Turborepo monorepo template with Next.js 16, React 19, and shadcn/ui.
 
