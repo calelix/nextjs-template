@@ -52,7 +52,7 @@ template/
 | `pnpm dev`       | Start dev servers    |
 | `pnpm build`     | Build all packages   |
 | `pnpm lint`      | Lint                 |
-| `pnpm format`    | Format with Prettier |
+| `pnpm lint:fix`  | Lint and autofix     |
 | `pnpm typecheck` | TypeScript check     |
 
 ### `apps/web` (run with `pnpm --filter web <script>`)
@@ -64,7 +64,6 @@ template/
 | `build`             | Production build                  |
 | `start`             | Run the production build          |
 | `lint` / `lint:fix` | ESLint (with autofix variant)     |
-| `format`            | Prettier write                    |
 | `typecheck`         | `tsc --noEmit`                    |
 | `test`              | Vitest (browser mode)             |
 | `test:e2e`          | Playwright e2e tests              |

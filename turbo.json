@@ -11,8 +11,8 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
-    "format": {
-      "dependsOn": ["^format"]
+    "lint:fix": {
+      "dependsOn": ["^lint:fix"]
     },
     "typecheck": {
       "dependsOn": ["^typecheck"]
