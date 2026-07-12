@@ -1,6 +1,6 @@
 import { http, HttpResponse } from "msw"
 
-import { POSTS_URL, type Post } from "./posts"
+import { type Post, POSTS_URL } from "./posts"
 
 export const handlers = [
   http.get(POSTS_URL, ({ request }) => {

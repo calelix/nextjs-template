@@ -1,7 +1,7 @@
+import "@workspace/ui/globals.css"
+
 import type { Preview } from "@storybook/nextjs-vite"
 import { Geist, Geist_Mono } from "next/font/google"
-
-import "@workspace/ui/globals.css"
 
 import { cn } from "@workspace/ui/lib/utils"
 
