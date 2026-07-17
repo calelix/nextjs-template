@@ -22,7 +22,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.0",
+    "@tailwindcss/postcss": "^4.3.3",
     "@turbo/gen": "^2.9.16",
     "@types/node": "^25.9.5",
     "@types/react": "^19.2.17",
